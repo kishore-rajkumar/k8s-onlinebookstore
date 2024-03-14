@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: onlinebookstore-products
+  name: onlinebookstore-products
+spec:
+  ports:
+  - name: 80-8080
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: onlinebookstore-products
+  type: ClusterIP
+status:
+  loadBalancer: {}

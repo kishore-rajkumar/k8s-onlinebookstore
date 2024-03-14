@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ProductServiceImpl implements ProductService {
+public class ProductServiceImplWithDummyData implements ProductService {
 	
 	List<Product> products = Stream.of(new Product(1L, "Buiscuits", "BSK"), 
 			new Product(2L, "Chips", "CHP"),
